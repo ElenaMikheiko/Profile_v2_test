@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB7F9576-D306-469B-992A-873CFDD43B1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProfileV2Test</RootNamespace>
+    <AssemblyName>ProfileV2Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.1.18\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.1.1.18\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-2-0.1.6.3\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.2.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.2.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.6.3.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-2-0.1.6.3\lib\net45\TechTalk.SpecRun.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun.Common, Version=1.6.3.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-2-0.1.6.3\lib\net45\TechTalk.SpecRun.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.7.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.7.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\BaseSteps.cs" />
+    <Compile Include="FeatureFiles\_2\2.2. Upload foto.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>2.2. Upload foto.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_2\2.3 Log out of system.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>2.3 Log out of system.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_4\4.1. List_of_students.feature.cs">
+      <DependentUpon>4.1. List_of_students.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.11 To fill in block %27Additional information%27.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.11 To fill in block %27Additional information%27.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.14 To submit resume.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.14 To submit resume.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.15 To edit resume.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.15 To edit resume.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.16 To fill in block %27Objective%27.feature.cs">
+      <DependentUpon>5.16 To fill in block %27Objective%27.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.19 To return to last step of filling in resume.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.19 To return to last step of filling in resume.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.3 To fill in block %27Personal and contact info%27.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.3 To fill in block %27Personal and contact info%27.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.4 To fill in block %27Summary%27.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.4 To fill in block %27Summary%27.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.5 To fill block Skills.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.5 To fill block Skills.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.6 To fill in block %27Foreign languages%27.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.6 To fill in block %27Foreign languages%27.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\PathsToFiles.cs" />
+    <Compile Include="Initializers\ScenarioInitializer.cs" />
+    <Compile Include="FeatureFiles\_1\1.1 Landing page.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>1.1 Landing page.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_1\1.2 Authentification in the system.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>1.2 Authentification in the system.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\5.2 Fill in resume block.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.2 Fill in resume block.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_5\_5_7\5.7.1 To fill in block %27Education%27.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>5.7.1 To fill in block %27Education%27.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureFiles\_6\6.1 To see default list of Students.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>6.1 To see default list of Students.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\HelperMethods.cs" />
+    <Compile Include="Infrastructure\ProjectUrls.cs" />
+    <Compile Include="Initializers\TestInitializer.cs" />
+    <Compile Include="Page\ResumePages\ResumeCompletedPage.cs" />
+    <Compile Include="Page\ResumePages\ResumeEditPage.cs" />
+    <Compile Include="Page\ResumePages\_09_WorkExperience_PartialResumePage.cs" />
+    <Compile Include="Page\ResumePages\_12AdditionalnformationPage.cs" />
+    <Compile Include="Page\ResumePages\_05_ForeignLanguages_PartialResumePage.cs" />
+    <Compile Include="Page\ResumePages\_04_Skills_PartialResumePage.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Page\HomePage.cs" />
+    <Compile Include="Page\HrManagerPage.cs" />
+    <Compile Include="Page\LandingPage.cs" />
+    <Compile Include="Page\ResumePages\_06_Education_PartialResumePage.cs" />
+    <Compile Include="Page\ResumePages\_02_Objective_PartialResumePage.cs" />
+    <Compile Include="Page\ResumePages\_01_PersonalInformation_PartialResumePage.cs" />
+    <Compile Include="Page\ResumePages\ResumePage.cs" />
+    <Compile Include="Page\TrainerPage.cs" />
+    <Compile Include="Page\ResumePages\_03_Summary_PartialResumePage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Shared\CommonMethods.cs" />
+    <Compile Include="Tests\Shared\CommonVariables.cs" />
+    <Compile Include="Tests\Shared\TestUserLoginSteps.cs" />
+    <Compile Include="Tests\_1\_1_2_AuthenticationInTheSystemSteps.cs" />
+    <Compile Include="Tests\Shared\CommonSteps.cs" />
+    <Compile Include="Tests\_1\_1_1_LandingPageSteps.cs" />
+    <Compile Include="Tests\_2\PersonalInformationPageSteps.cs" />
+    <Compile Include="Tests\_2\ToUploadPhotoSteps.cs" />
+    <Compile Include="Tests\_2\_2_3SignOutOfSystemSteps.cs" />
+    <Compile Include="Tests\_4\_4_1ToSeeListOfStudentsSteps.cs" />
+    <Compile Include="Tests\_5\FillInBlockObjectiveSteps.cs" />
+    <Compile Include="Tests\_5\_5_11ToFillInBlockAdditionalInformationSteps.cs" />
+    <Compile Include="Tests\_5\_5_14ToSubmitResumeSteps.cs" />
+    <Compile Include="Tests\_5\_5_15ToEditResumeSteps.cs" />
+    <Compile Include="Tests\_5\_5_16ToFillInBlockObjectiveSteps.cs" />
+    <Compile Include="Tests\_5\_5_2ToFillInResumeBlocksSteps.cs" />
+    <Compile Include="Tests\_5\_5_3ToAddPersonalAndContactInformationSteps.cs" />
+    <Compile Include="Tests\_5\_5_4ToFillInBlockSummarySteps.cs" />
+    <Compile Include="Tests\_5\ToSeeMyPositionInResumeSteps.cs" />
+    <Compile Include="Tests\_5\_5_5ToFillInBlockSkillsSteps.cs" />
+    <Compile Include="Tests\_5\_5_6ToFillInBlockForeignLanguagesSteps.cs" />
+    <Compile Include="Tests\_6\_6_1ToSeeDefaultListOfStudentsSteps.cs" />
+    <Compile Include="Tests\_6\ToSortOutInformationInListOfStudentsSteps.cs" />
+    <Compile Include="Tests\_5\_5_19ToReturnToLastStepOfFillingInResumeSteps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Default.srprofile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FeatureFiles\_1\1.1 Landing page.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>1.1 Landing page.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_1\1.2 Authentification in the system.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>1.2 Authentification in the system.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_2\2.2. Upload foto.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>2.2. Upload foto.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_2\2.3 Log out of system.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>2.3 Log out of system.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_4\4.1. List_of_students.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>4.1. List_of_students.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.11 To fill in block %27Additional information%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.11 To fill in block %27Additional information%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.14 To submit resume.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.14 To submit resume.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.15 To edit resume.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.15 To edit resume.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.16 To fill in block %27Objective%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.16 To fill in block %27Objective%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.19 To return to last step of filling in resume.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.19 To return to last step of filling in resume.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.3 To fill in block %27Personal and contact info%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.3 To fill in block %27Personal and contact info%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.4 To fill in block %27Summary%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.4 To fill in block %27Summary%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.5 To fill block Skills.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.5 To fill block Skills.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.6 To fill in block %27Foreign languages%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.6 To fill in block %27Foreign languages%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_6\6.1 To see default list of Students.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>6.1 To see default list of Students.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\_5_7\5.7.1 To fill in block %27Education%27.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.7.1 To fill in block %27Education%27.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureFiles\_5\5.2 Fill in resume block.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>5.2 Fill in resume block.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="runtests.cmd" />
+    <None Include="SpecRunTestProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecRunTestProfile_2011_09.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileForTest2.2\BiggerThan3MB.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FileForTest2.2\LessThan3MB.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets')" />
+</Project>

@@ -1,0 +1,1 @@
+﻿#error (1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'http://confluence.it-academy.by:8090/display/PROF/US+5.17+To+view+HR%27s+comments+on+resume'

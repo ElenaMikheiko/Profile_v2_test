@@ -1,0 +1,7 @@
+﻿#error (1:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got 'Data of users'
+#error (2:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|Role     |name                     |surname              |e-mail               |password      |phone number     |'
+#error (3:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|student  |Ivan                     |Ivanov               |Ivan@profile.com     |student       |+375 44 123 45 67|'
+#error (4:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|account1 |Maria                    |Zaporoschenko        |hr@it-academy.by     |              |                 |'
+#error (5:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|         |                         |                     |admin@profile.com    |admin123      |                 |'
+#error (6:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|         |                         |                     |trainer@profile.com  |trainer       |                 |'
+#error (7:1): expected: #EOF, #Language, #TagLine, #FeatureLine, #Comment, #Empty, got '|         |                         |                     |hr's login           |hr's pass     |                 |'

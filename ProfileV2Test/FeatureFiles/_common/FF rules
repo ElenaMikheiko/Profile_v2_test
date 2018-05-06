@@ -1,0 +1,32 @@
+текст комментариев/вопросов указывается после #
+
+все плейсхолдеры, текст сообщений и в сценариях кол-ва символов и тип берем в такие кавычки "<текст>"
+пример 1:
+When I write "<number>" of symbols in "Skype" field
+Then  I see "<status>" of "Next" button
+And I see "<input>" of symbols
+
+пример 2:
+When I write "<letters>" in "<field_name>" 
+Then I see the written "<elements>" 
+
+пример 3:
+When I write "<number>" of symbols in field "Surname"
+Then Countdown number is "<countdown_number>"
+And Countdown number is red
+
+В бэкграунде не указываем все шаги, что заполнил, start filling in resume и сразу i go to page такая-то 
+
+данные пользователей для тестирования в файле Data of users.feature
+
+to describe all scenarios, but to mark with e.g.@ignore those which cannot be covered by autotests
+
+to add mock-ups 
+
+it's better to use nouns in FF titles, not verbs
+
+it's better to avoid numbers in FF titles
+
+Given should describe state, not action
+
+comments for FF can be gathered in readme.file (rules, limitations, е/ё, articles)

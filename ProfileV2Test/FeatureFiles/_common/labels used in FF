@@ -1,0 +1,16 @@
+@Checked_QA = FF was checked by QA
+
+@approved_QA = FF was approved by QA
+
+@Checked_DEV = FF was checked by DEV
+
+@approved_DEV = FF was approved by DEV
+
+@Validation = FF concerning validation rules
+
+@UI = FF concerning UI
+
+@question = I have a question 
+
+@ignore = tests for manual testing, impossible to check with autotests
+

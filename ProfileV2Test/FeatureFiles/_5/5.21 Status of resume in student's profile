@@ -1,0 +1,55 @@
+#http://confluence.it-academy.by:8090/display/PROF/US+5.21+To+check+resume+status+in+Student%27s+profile
+#|Role     |name                     |surname              |e-mail                   |password      |
+#|student  |Pavel                    |Submit               |breab.reens555@gmail.com |brea123456    |
+#|student  |Brea                     |Breens			   |breabreens555@gmail.com  |brea123456    |
+
+Feature: 5.21 Status of resume in student's profile
+In order to understand progress of my resume
+As student
+I should have possibility to check my resume status
+
+Scenario: Student checks status of resume
+Given As unauthorised user I come to landing page of Profile
+And I log in as Brea Breens
+Then I can see that resume status is "New"
+And I can see date in format "<hh:mm, dd-mm-yyyy>"
+
+Scenario: Student can see hint about resume status "New" meaning
+Given As unauthorised user I come to landing page of Profile
+And I log in as Brea Breens
+When I hover on "New" status
+Then I can see hint message "You have not created your resume. Or the resume was not submitted yet."
+
+Scenario: Student checks status of resume after it is submitted
+Given As unauthorised user I come to landing page of Profile
+And I log in as Pavel Submit
+#And I submitted my resume
+Then I can see that resume status is "Submitted"
+And I can see date in format "<hh:mm, dd-mm-yyyy>"
+
+Scenario: Student can see hint about resume status "Submitted" meaning
+Given As unauthorised user I come to landing page of Profile
+And I log in as Pavel Submit
+When I hover on "Submitted" status
+Then I can see hint message "You have not created your resume. Or the resume was not submitted yet."
+
+#Scenario: Student checks status of resume after it is submitted
+#Given I log in as Brea Breens
+#And I submitted my resume
+#And I have comments no resume from HR
+#Then I can see that resume status is "Review" <hh.ss, dd,mm,yyyy>"
+#And I can see hint "Please correct your resume according to HR's comments and submit it again."
+
+#Scenario: Student checks status of resume after it is submitted
+#Given I log in as Brea Breens
+#And I submitted my resume
+#And HR approved my resume
+#Then I can see that resume status is "Approved" <hh.ss, dd,mm,yyyy>"
+#And I can see hint "Your resume was approved by HR. You will be informed by e-mail when you are recommended to a company."
+
+#Scenario: Student checks status of resume after it is submitted
+#Given I log in as Brea Breens
+#And I submitted my resume
+#And HR sent my resume to company
+#Then I can see that resume status is "Recommended" <hh.ss, dd,mm,yyyy>"
+#And I can see hint "Your resume was recommended. Please check information in your e-mail."
